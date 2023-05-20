@@ -6,6 +6,7 @@ import 'package:flutter/services.dart';
 class Registro extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final Controller appController = Get.find();
     return Scaffold(
       resizeToAvoidBottomInset: false, // Prevents bottom overflow
       body: SafeArea(

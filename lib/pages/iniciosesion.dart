@@ -2,10 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:regemotorapp/controllers/controller.dart';
 import 'package:get/get.dart';
 import 'package:flutter/services.dart';
+import 'package:regemotorapp/pages/home.dart';
 
 class Login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final Controller appController = Get.find();
+    //SystemChrome.setEnabledSystemUIOverlays([]);
     return Scaffold(
       body: SafeArea(
         child: Stack(
@@ -67,7 +70,9 @@ class Login extends StatelessWidget {
                     alignment: Alignment.center,
                     child: ElevatedButton(
                       onPressed: () {
-                        // Lógica para iniciar sesión
+                        // FALTA LA LOGICA DE VERIFICA LA IDENTIDAD
+                        // POR EL MOMENTO SE PASA DIRECTAMENTE A LA PANTALLA HOME
+                        Get.to(() => Home());
                       },
                       child: Text(
                         'Iniciar sesión',
