@@ -13,11 +13,10 @@ class Init extends StatelessWidget {
         child: Container(
           padding: EdgeInsets.all(16.0),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.start, // Alinea el título en la parte superior
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Image.asset(
-                'assets/logo.png', // Ruta de la imagen de tu logo
-                height: 360,
+                'assets/logo.png',
                 width: 360,
               ),
               SizedBox(height: 16.0),
