@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:regemotorapp/controllers/controller.dart';
+import 'package:regemotorapp/pages/ajustes.dart';
 import 'package:regemotorapp/pages/invent1.dart';
 
 class Home extends StatelessWidget {
@@ -157,7 +158,7 @@ class Home extends StatelessWidget {
             IconButton(
               icon: Icon(Icons.settings),
               onPressed: () {
-                // Acción del botón de tuerca
+                Get.to(() => Ajustes());
               },
             ),
           ],

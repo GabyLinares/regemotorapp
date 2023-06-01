@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:regemotorapp/controllers/controller.dart';
 import 'package:regemotorapp/pages/home.dart';
+import 'package:regemotorapp/pages/invent2.dart';
+
+import 'ajustes.dart';
+import 'clientes.dart';
 
 class Invent1 extends StatelessWidget {
   @override
@@ -35,7 +39,7 @@ class Invent1 extends StatelessWidget {
                         onPrimary: Colors.white,
                       ),
                       onPressed: () {
-                        // Acción del botón de "Consulta"
+                        Get.to(() => Invent2());
                       },
                       child: Text('Consulta'),
                     ),
@@ -46,9 +50,9 @@ class Invent1 extends StatelessWidget {
                         onPrimary: Colors.white,
                       ),
                       onPressed: () {
-                        // Acción del botón de "Compras"
+                        Get.to(() => Clientes());
                       },
-                      child: Text('Compras'),
+                      child: Text('Clientes'),
                     ),
                   ],
                 ),
@@ -80,7 +84,7 @@ class Invent1 extends StatelessWidget {
             IconButton(
               icon: Icon(Icons.settings),
               onPressed: () {
-                // Acción del botón de tuerca
+                Get.to(() => Ajustes());
               },
             ),
           ],
